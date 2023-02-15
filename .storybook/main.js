@@ -6,4 +6,5 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-controls'
   ],
+  staticDirs: ['../src/assets'],
 };

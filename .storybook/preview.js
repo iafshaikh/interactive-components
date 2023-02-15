@@ -26,13 +26,6 @@ addParameters({
     font-display: block;
   }
 
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('./fonts/proximanova-regular.woff2?v=00000000') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: block;
-  }
     body {
       font-family: 'proxima-nova', Arial, sans-serif;
     }

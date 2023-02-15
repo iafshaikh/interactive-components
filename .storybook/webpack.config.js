@@ -1,25 +1,25 @@
-const path = require('path');
+// const path = require('path');
 
-module.exports = async ({ config }) => {
-  // styles for later
+// module.exports = async ({ config }) => {
+//   // styles for later
+// //   config.module.rules.push({
+// //     test: /\.(sass|scss)$/,
+// //     use: ['resolve-url-loader'],
+// //     include: path.resolve(__dirname, '../')
+// //   });
+//   // fonts
 //   config.module.rules.push({
-//     test: /\.(sass|scss)$/,
-//     use: ['resolve-url-loader'],
+//     test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+//     use: [
+//       {
+//         loader: 'file-loader',
+//         query: {
+//           name: '[name].[ext]'
+//         }
+//       }
+//     ],
 //     include: path.resolve(__dirname, '../')
 //   });
-  // fonts
-  config.module.rules.push({
-    test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-    use: [
-      {
-        loader: 'file-loader',
-        query: {
-          name: '[name].[ext]'
-        }
-      }
-    ],
-    include: path.resolve(__dirname, '../')
-  });
 
-  return config;
-};
+//   return config;
+// };
