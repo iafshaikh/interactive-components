@@ -1,26 +1,40 @@
-import { html } from 'lit';
-import './button';
+import { html } from 'lit-element';
+import { MyButton } from './button';
 
 export default {
   title: 'Button',
-  component: 'my-button',
+  component: MyButton,
   argTypes: {
-    label: { control: 'text' },
-    variant: { control: { type: 'select', options: ['primary', 'outline', 'tertiary', 'add', 'destructive'] } },
-    size: { control: { type: 'select', options: ['sm', 'md', 'lg'] } },
-    type: { control: { type: 'select', options: ['pill', 'brick'] } },
-   // disabled: { control: 'boolean' },
+    label: { control: 'text', defaultValue: 'Button' },
+    type: { options: ['button', 'submit', 'reset'], control: 'inline-radio' },
+    variant: { options: ['primary', 'outline', 'tertiary', 'destructive', 'add'], control: 'select' },
+    pill: { control: 'boolean', defaultValue: false, },
+    size: { options: ['s', 'm', 'l'],defaultValue: 'm', control: 'inline-radio' },
   },
 };
 
-const Template = ({ label, variant, size, type, disabled }) => html`
-  <my-button label="${label}" variant="${variant}" type="${type}" size="${size}" ?disabled="${disabled}"></my-button>
-`;
+const Template = ({ label, treatment, type, variant,size,pill, disabled }) => {
+  return html`
+    <my-button
+      ?treatment=${treatment}
+      ?type=${type}
+      variant=${variant}
+      size=${size}
+      pill=${pill}
+      ?disabled=${disabled}
+    >
+      ${label}
+    </my-button>
+  `;
+};
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Button',
+  treatment: 'fill',
+  type: 'button',
   variant: 'primary',
+  size: 'm',
+  active: true
 };
 
 export const Outlined = Template.bind({});
@@ -28,6 +42,7 @@ Outlined.args = {
   label: 'Button',
   variant: 'outline',
 };
+
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
@@ -58,15 +73,13 @@ Add.args = {
 export const Pill = Template.bind({});
 Pill.args = {
   label: 'Button',
-  type: 'pill',
+  pill: true,
   variant: 'primary',
 };
 
 export const OutlinedPill = Template.bind({});
 OutlinedPill.args = {
   label: 'Button',
-  type: 'pill',
+  pill: true,
   variant: 'outline',
 };
-
-

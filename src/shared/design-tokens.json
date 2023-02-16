@@ -1,0 +1,91 @@
+{
+    "colors": {
+        "blacktypo": "#191919",
+        "blue100": "#0B56BF",
+        "blue120": "#094599",
+        "blue15": "#DAE6F6",
+        "blue30": "#B5CCEC",
+        "blue5": "#F0F4FA",
+        "blue50": "#84AADF",
+        "dmblack": "#16161F",
+        "dmblue100": "#307EF2",
+        "dmblue150": "#183F79",
+        "dmblue180": "#0E2649",
+        "dmblue190": "#071324",
+        "dmblue80": "#5997F4",
+        "dmgreen100": "#0EB35B",
+        "dmgreen150": "#12653C",
+        "dmgreen170": "#134531",
+        "dmgrey40": "#6A6A6F",
+        "dmgrey70": "#5C5C63",
+        "dmgrey80": "#45454C",
+        "dmgrey90": "#2E2E36",
+        "dmred150": "#6E0911",
+        "dmred5": "#42050A",
+        "dmtrueblack": "#000000",
+        "green10": "#E5F5EC",
+        "green100": "#038840",
+        "green30": "#B2E0C7",
+        "grey15typodcdcdc": "#DCDCDC",
+        "grey30": "#B9B9B9",
+        "grey5": "#F5F5F5",
+        "grey60typo757575": "#757575",
+        "grey80typo": "#474747",
+        "grey8ededed": "#EDEDED",
+        "red100": "#DB1222",
+        "red100plus": "#FF1B29",
+        "red20": "#F8CFD2",
+        "red5": "#FDF2F3",
+        "whitetypo": "#FFFFFF",
+        "yellow10": "#FFF7E5",
+        "yellow100": "#FFB300",
+        "yellow150": "#8B650F",
+        "yellow170": "#5C4516",
+        "yellow30": "#FFE8B2"
+    },
+    "typography": {
+        "fontFamily": "Proxima Nova",
+        "fontWeight": {
+            "normal": "normal",
+            "medium": "medium",
+            "600": "600px"
+        },
+        "fontSize": {
+            "12": "12px",
+            "14": "14px",
+            "16": "16px",
+            "18": "18px",
+            "20": "20px",
+            "24": "24px",
+            "32": "32px",
+            "40": "40px",
+            "48": "48px"
+        },
+        "letterSpacing": {
+            "0": "0px",
+            "0.11": "0.11px",
+            "0.1": "0.1px",
+            "0.06": "0.06px",
+            "-0.07": "-0.07px",
+            "0.16": "0.16px",
+            "-0.1": "-0.1px",
+            "-0.19": "-0.19px",
+            "-0.32": "-0.32px",
+            "-0.58": "-0.58px"
+        },
+        "lineHeight": {
+            "14": "14px",
+            "18": "18px",
+            "20": "20px",
+            "22": "22px",
+            "24": "24px",
+            "32": "32px",
+            "34": "34px",
+            "48": "48px",
+            "56": "56px"
+        },
+        "textTransform": {
+            "uppercase": "uppercase"
+        }
+    }
+}
