@@ -3,24 +3,23 @@ import { MyButton } from './button';
 
 export default {
   title: 'Button',
-  component: MyButton,
+  component: 'my-button',
   argTypes: {
     label: { control: 'text', defaultValue: 'Button' },
     type: { options: ['button', 'submit', 'reset'], control: 'inline-radio' },
     variant: { options: ['primary', 'outline', 'tertiary', 'destructive', 'add'], control: 'select' },
     pill: { control: 'boolean', defaultValue: false, },
-    size: { options: ['s', 'm', 'l'],defaultValue: 'm', control: 'inline-radio' },
+    size: { options: ['s', 'm', 'l'], defaultValue: 'm', control: 'inline-radio' },
   },
 };
 
-const Template = ({ label, treatment, type, variant,size,pill, disabled }) => {
+const Template = ({ label, type, variant, size, pill, disabled }) => {
   return html`
     <my-button
-      ?treatment=${treatment}
-      ?type=${type}
+      type=${type}
       variant=${variant}
       size=${size}
-      pill=${pill}
+      ?pill=${pill}
       ?disabled=${disabled}
     >
       ${label}
@@ -30,11 +29,9 @@ const Template = ({ label, treatment, type, variant,size,pill, disabled }) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  treatment: 'fill',
   type: 'button',
   variant: 'primary',
   size: 'm',
-  active: true
 };
 
 export const Outlined = Template.bind({});

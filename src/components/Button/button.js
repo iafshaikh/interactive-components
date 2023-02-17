@@ -1,4 +1,4 @@
-import { css, html } from 'lit-element';
+import { css, html } from 'lit';
 import { Button } from '@spectrum-web-components/button';
 import designTokens from '../../shared/design-tokens.json';
 
@@ -6,10 +6,7 @@ class MyButton extends Button {
   static get properties() {
     return {
       label: { type: String },
-      active: { type: Boolean },
       disabled: { type: Boolean },
-      static: { type: String },
-      treatment: { type: String },
       type: { type: String },
       variant: { type: String },
       size: { type: String },
