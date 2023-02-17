@@ -1,4 +1,4 @@
-import { html } from 'lit-element';
+import { html } from 'lit';
 import { MyButton } from './button';
 
 export default {
@@ -19,7 +19,7 @@ const Template = ({ label, type, variant, size, pill, disabled }) => {
       type=${type}
       variant=${variant}
       size=${size}
-      ?pill=${pill}
+      pill=${pill}
       ?disabled=${disabled}
     >
       ${label}
